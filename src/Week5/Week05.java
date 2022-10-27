@@ -1,8 +1,5 @@
 package Week5;
 import helpers.*;
-/**
- * 
- */
 public class Week05 
 {
     public static void main(String[] args)
@@ -13,10 +10,13 @@ public class Week05
         System.out.println("CO452 Programming Concepts 2022/23");
         System.out.println("==================================");
         System.out.println();
-        System.out.println("  Week 5 Java Revision & Quiz ");
+        System.out.println("Music Programme ");
         System.out.println();
-        System.out.println(" by Nicholas Day and Derek Peacock");
+        System.out.println("by Ana Elderton");
         System.out.println();
+
+        MusicList musicList = new MusicList();
+        musicList.run();
     }     
     
 }
