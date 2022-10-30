@@ -1,10 +1,13 @@
 package Week5;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+
 import helpers.InputReader;
+import java.util.Scanner;
 
 public class MusicList {
-    private ArrayList<Song> songs = new ArrayList<Song>();
+    
 
     public void run() {
         System.out.println("Ana's Music List");
@@ -14,6 +17,7 @@ public class MusicList {
         deleteSong();
         printSongs();
         orderedPrintSongs();  
+        song();
     }
 
     private void mainMenu() {
@@ -26,7 +30,6 @@ public class MusicList {
 
         int option;
         option = InputReader.getInt("Please enter desired option (1-5):  ");
-        
         if (option == 1) {
             addNewSong();
         } 
@@ -47,20 +50,24 @@ public class MusicList {
 
 
     private void addNewSong() {
-        System.out.println("Please enter the title of the song you wish to add.");
+        song = InputReader.getString("Please enter the title of the song you wish to add.");
     }
+
     private void deleteSong() {
-        System.out.println("Please enter the title of the song you wish to delete.");
+        InputReader.getString("Please enter the title of the song you wish to delete.");
     }
+
     private void printSongs() {
-        System.out.println("Ana, if this works, imma be surprised");
-        testSongs();
+        System.out.println(ArrayList<song>());
     }
+
     private void orderedPrintSongs() {
         System.out.println("Ana, if this works, imma be surprised 2");
-        testSongs();
+
     }
+
     private void testSongs() {
+        ArrayList<Song> songs = new ArrayList<Song>();        
         Song song1 = new Song("Children of the Grave", "Black Sabbath", 5748967);
         Song song2 = new Song("Gift of guilt", "Gojira", 2008967);
         Song song3 = new Song("Hunger of the Undead", "Dark Angel", 78967);
@@ -69,6 +76,7 @@ public class MusicList {
         Song song6 = new Song("Ache With Me", "Against Me!", 187158);
         Song song7 = new Song("Cherry Bomb", "Joan Jett & the Blackhearts", 6868967);
         Song song8 = new Song("Comfort in the Grace", "Vision Video", 98967);
+
         songs.add(song1);
         songs.add(song2);
         songs.add(song3);
