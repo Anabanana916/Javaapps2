@@ -1,7 +1,8 @@
 package Week5;
 
 /**
- * Below is an array class that determines a number ofobjects that can be called and printed
+ * Below is an array class that determines a number of objects that can be called and printed
+ * stores details of songs
  * @author Ana
  */
 public class Song 
@@ -12,6 +13,7 @@ public class Song
     
     /**
     * This is the constructor that will create the name, artist and number of plays
+    *of a song
     */
     public Song(String name, String artist, int numberOfPlays)
     {
